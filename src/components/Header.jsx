@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useLayoutEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect, useRef } from "react";
 import Button from "./Buttons/Button";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -29,7 +29,7 @@ function Header() {
   const [isHovered, setIsHovered] = useState(false);
   const [activeMenuItem, setActiveMenuItem] = useState(0);
   const [clientLogo, setClientLogo] = useState([])
-
+  const hasFetchedRef = useRef(false);
   const [headerMenu, setHeaderMenu] = useState({
     about_menu: [],
     resource_menu: [],
@@ -88,7 +88,9 @@ function Header() {
     }
   };
 
-  useLayoutEffect(() => {
+  useEffect(() => {
+    if (hasFetchedRef.current) return;
+    hasFetchedRef.current = true;
     headerMenuPageRecored();
   }, []);
 
@@ -99,7 +101,7 @@ function Header() {
   const [logoTwo, setLogoTwo] = useState(false);
 
   const [activeClass, setActiveClass] = useState(false);
-  
+
   const [subMenuOpen, setSubMenuOpen] = useState(Array(2).fill(false)); // Assuming there are 2 submenus
   const [subMenuExpanded, setSubMenuExpanded] = useState(Array(2).fill(false));
   const [blogSubMenuOpen, setBlogSubMenuOpen] = useState(null);
@@ -305,21 +307,21 @@ function Header() {
                                     <Link className="my_header_contact" to="tel:+9530488844">
                                       <div className="box_client">
                                         <i className="fa-solid fa-phone-volume"></i>
-                                       <span className="d-block"> Call us at</span>
-                                     
+                                        <span className="d-block"> Call us at</span>
+
                                         +91-9530488844
                                       </div>
                                     </Link>
                                   </Col>
 
                                   <Col md={6}>
-                                      <Link to="/contact" className="my_header_contact">
-                                    <div className="box_client">
-                                      <i className="fa-solid fa-envelope"></i>
-                                      <span className="d-block"> Get in Touch</span>
+                                    <Link to="/contact" className="my_header_contact">
+                                      <div className="box_client">
+                                        <i className="fa-solid fa-envelope"></i>
+                                        <span className="d-block"> Get in Touch</span>
                                         Let's talk more!
-                                    </div>
-                                      </Link>
+                                      </div>
+                                    </Link>
                                   </Col>
                                 </Row>
                                 {/* </div> */}
@@ -370,9 +372,8 @@ function Header() {
                               >
                                 <ul>
                                   <li
-                                    className={`inner_one_more_menu ${
-                                      activeMenuItem === 0 ? "active" : ""
-                                    }`}
+                                    className={`inner_one_more_menu ${activeMenuItem === 0 ? "active" : ""
+                                      }`}
                                     onMouseEnter={() => handleTabNav(0)}
                                   >
                                     <Link to="/service-main/mobile-app-development">
@@ -394,9 +395,8 @@ function Header() {
                                   </li>
 
                                   <li
-                                    className={`inner_one_more_menu ${
-                                      activeMenuItem === 1 ? "active" : ""
-                                    }`}
+                                    className={`inner_one_more_menu ${activeMenuItem === 1 ? "active" : ""
+                                      }`}
                                     onMouseEnter={() => handleTabNav(1)}
                                   >
                                     <Link to="/service-main/web-development">
@@ -418,9 +418,8 @@ function Header() {
                                   </li>
 
                                   <li
-                                    className={`inner_one_more_menu ${
-                                      activeMenuItem === 2 ? "active" : ""
-                                    }`}
+                                    className={`inner_one_more_menu ${activeMenuItem === 2 ? "active" : ""
+                                      }`}
                                     onMouseEnter={() => handleTabNav(2)}
                                   >
                                     <Link to="/service-main/hybrid-app-development">
@@ -466,9 +465,8 @@ function Header() {
                                   </li> */}
 
                                   <li
-                                    className={`inner_one_more_menu ${
-                                      activeMenuItem === 4 ? "active" : ""
-                                    }`}
+                                    className={`inner_one_more_menu ${activeMenuItem === 4 ? "active" : ""
+                                      }`}
                                     onMouseEnter={() => handleTabNav(4)}
                                   >
                                     <Link to="/digital-marketing">
@@ -600,7 +598,7 @@ function Header() {
 
                   <div>
                     <Link className="text-white" to={"/hire-developers"}>
-                    Hire your Developer
+                      Hire your Developer
 
                     </Link>
                   </div>
@@ -903,7 +901,7 @@ function Header() {
                           <li key={3}>
                             <div>
                               <Link to="/service-main/business-consultation">
-                               Business Consultation{" "}
+                                Business Consultation{" "}
                               </Link>
                               <FontAwesomeIcon
                                 className={
@@ -999,7 +997,7 @@ function Header() {
                       )}
                     </li>
 
-                      {/* fourth */}
+                    {/* fourth */}
                     {/* <li className="menu-item" key={3}>
                       <Link
                         to={"/hire-developers"}
@@ -1032,7 +1030,7 @@ function Header() {
                     </li> */}
                     <li className="menu-item" key={4}>
                       <Link to={"/hire-developers"} onClick={handleMenuClose}>
-                      Hire your Developer
+                        Hire your Developer
 
                       </Link>
                     </li>

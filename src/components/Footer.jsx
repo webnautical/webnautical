@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import config from "../config";
@@ -27,6 +27,7 @@ function Footer() {
     quicklink_menu: [],
     legal_menu: [],
   });
+  const hasFetchedRef = useRef(false);
 
   const FooterRecord = async () => {
     try {
@@ -63,7 +64,9 @@ function Footer() {
       console.error("Error:", error);
     }
   };
-  useEffect(() => {
+ useEffect(() => {
+    if (hasFetchedRef.current) return;
+    hasFetchedRef.current = true;
     FooterRecord();
   }, []);
 

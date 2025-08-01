@@ -88,6 +88,7 @@ const Home = () => {
       setLoading(false);
     }
   };
+  
  useEffect(() => {
     if (hasFetchedRef.current) return;
     hasFetchedRef.current = true;
