@@ -1,0 +1,876 @@
+import React from "react";
+import PortfolioBanner from "./portfolio-layout/PortfolioBanner";
+import PortfolioTextSec from "./portfolio-layout/PortfolioTextSec";
+import PortfolioOwlCrousel from "./portfolio-layout/PortfolioOwlCrousel";
+import PortfolioImageSec from "./portfolio-layout/PortfolioImageSec";
+
+import HomeLeftImg from "../../assets/portfolio-images/i-1.png";
+import HomeRightImg from "../../assets/portfolio-images/i-2.webp";
+
+import home_img1 from "../../assets/portfolio-images/sort2.png";
+import home_img2 from "../../assets/portfolio-images/sort3.png";
+import home_img3 from "../../assets/portfolio-images/sort4.png";
+
+import bdazzle_img1 from "../../assets/portfolio-images/je-1.png";
+import bdazzle_img2 from "../../assets/portfolio-images/je-2.png";
+import bdazzle_img3 from "../../assets/portfolio-images/je-3.png";
+import bdazzle_img4 from "../../assets/portfolio-images/je-4.jpg";
+import bdazzle_img5 from "../../assets/portfolio-images/je-5.jpg";
+
+import kawani_img1 from "../../assets/portfolio-images/kawani-1.webp";
+import kawani_img2 from "../../assets/portfolio-images/kawani-2.png";
+import kawani_img3 from "../../assets/portfolio-images/kawani-3.png";
+import kawani_img4 from "../../assets/portfolio-images/kawani-4.png";
+import kawani_img5 from "../../assets/portfolio-images/kawani-5.webp";
+import kawani_img6 from "../../assets/portfolio-images/kawani-6.webp";
+
+import rona_img1 from "../../assets/portfolio-images/rona-1.jpg";
+import rona_img2 from "../../assets/portfolio-images/rona-2.png";
+import rona_img3 from "../../assets/portfolio-images/rona-3.png";
+// import rona_img4 from "../../assets/portfolio-images/rona-4.png";
+import rona_img5 from "../../assets/portfolio-images/rona-5.jpg";
+import rona_img6 from "../../assets/portfolio-images/rona-6.jpg";
+
+import south_img1 from "../../assets/portfolio-images/south-1.jpg";
+import south_img2 from "../../assets/portfolio-images/south-2.png";
+import south_img3 from "../../assets/portfolio-images/south-3.png";
+import south_img4 from "../../assets/portfolio-images/south-4.png";
+import south_img5 from "../../assets/portfolio-images/south-5.jpg";
+import south_img6 from "../../assets/portfolio-images/south-6.jpg";
+
+import boda_img1 from "../../assets/portfolio-images/boda-1.jpg";
+import boda_img2 from "../../assets/portfolio-images/boda-2.png";
+import boda_img3 from "../../assets/portfolio-images/boda-3.png";
+import boda_img4 from "../../assets/portfolio-images/boda-4.png";
+import boda_img5 from "../../assets/portfolio-images/boda-5.png";
+import boda_img6 from "../../assets/portfolio-images/boda-6.jpg";
+
+import iaamu_img1 from "../../assets/portfolio-images/iaamu-1.jpg";
+import iaamu_img2 from "../../assets/portfolio-images/iaamu-2.png";
+import iaamu_img3 from "../../assets/portfolio-images/iaamu-3.png";
+import iaamu_img4 from "../../assets/portfolio-images/iaamu-4.png";
+import iaamu_img5 from "../../assets/portfolio-images/iaamu-5.jpg";
+import iaamu_img6 from "../../assets/portfolio-images/iaamu-6.jpg";
+
+import glass_img1 from "../../assets/portfolio-images/glass-1.jpeg";
+import glass_img2 from "../../assets/portfolio-images/glass-2.png";
+import glass_img3 from "../../assets/portfolio-images/glass-3.png";
+import glass_img4 from "../../assets/portfolio-images/glass-4.png";
+import glass_img5 from "../../assets/portfolio-images/glass-5.jpg";
+import glass_img6 from "../../assets/portfolio-images/glass-6.jpg";
+
+import mok_img1 from "../../assets/portfolio-images/mok-1.png";
+import mok_img2 from "../../assets/portfolio-images/mok-2.png";
+import mok_img3 from "../../assets/portfolio-images/mok-3.png";
+import mok_img4 from "../../assets/portfolio-images/mok-4.png";
+import mok_img5 from "../../assets/portfolio-images/mok-5.png";
+import mok_img6 from "../../assets/portfolio-images/mok-6.png";
+
+import aika_img1 from "../../assets/portfolio-images/aika-1.png";
+import aika_img2 from "../../assets/portfolio-images/aika-2.png";
+import aika_img3 from "../../assets/portfolio-images/aika-3.png";
+import aika_img4 from "../../assets/portfolio-images/aika-4.png";
+import aika_img5 from "../../assets/portfolio-images/aika-5.png";
+import aika_img6 from "../../assets/portfolio-images/aika-6.png";
+
+import giant_img1 from "../../assets/portfolio-images/gient-1.png";
+import giant_img2 from "../../assets/portfolio-images/gient-2.png";
+// import ginet_img3 from "../../assets/portfolio-images/ginet-3.png";
+// import ginet_img4 from "../../assets/portfolio-images/ginet-4.png";
+import giant_img5 from "../../assets/portfolio-images/gient-5.png";
+// import ginet_img6 from "../../assets/portfolio-images/ginet-6.png";
+
+import img1 from "../../assets/portfolio-images/sort2.png";
+import img2 from "../../assets/portfolio-images/sort3.png";
+import img3 from "../../assets/portfolio-images/sort4.png";
+
+
+
+export const portfolioDetailsData = [
+  {
+    id: "",
+    bannerData: {
+      imageUrl:kawani_img1,
+      title:" ",
+      sumTitle: " ",
+      technology: "Wordpress",
+      start: "06/08/2021",
+      launch: " ",
+      webLink: "  ",
+    },
+    aboutDetail: {
+      sNo: "01",
+      topic: "Project Brief ",
+      heading: "bdazzle ",
+      description: " ",
+    },
+    challengesDetail: {
+      sNo: "02",
+      topic: "Faced Challenges",
+      heading: "Challenge",
+      description:"The designs and creatives need to be displayed in a way where the user can compare easily.Easy backend so that the tech team with the client can easily update the upcoming events.Building a solution that users can easily relate to and interact with so many features included was a tough thing.",
+    },
+    
+    conclusionDetail: {
+      sNo: "03",
+      topic: "CONCLUSION",
+      heading: "",
+      description:"The team at Webnautical discussed the plausibilities with the client and curated a design where it was easy to showcase and attract the potential clients.after that The website was successfully deployed and is helping the client make great profit.",
+    },
+    sliderImgs: {
+      img1: kawani_img2,
+      img2: kawani_img4,
+      img3: kawani_img3,
+    },
+    imagesData: {
+      leftImage: kawani_img5,
+      rightImage: kawani_img6,
+    },
+  },
+  {
+    id: "",
+    bannerData: {
+      imageUrl:kawani_img1,
+      title:" ",
+      sumTitle: " ",
+      technology: "Wordpress",
+      start: "06/08/2021",
+      launch: " ",
+      webLink: "  ",
+    },
+    aboutDetail: {
+      sNo: "01",
+      topic: "Project Brief ",
+      heading: "bdazzle ",
+      description: " ",
+    },
+    challengesDetail: {
+      sNo: "02",
+      topic: "Faced Challenges",
+      heading: "Challenge",
+      description:"The designs and creatives need to be displayed in a way where the user can compare easily.Easy backend so that the tech team with the client can easily update the upcoming events.Building a solution that users can easily relate to and interact with so many features included was a tough thing.",
+    },
+    
+    conclusionDetail: {
+      sNo: "03",
+      topic: "CONCLUSION",
+      heading: "",
+      description:"The team at Webnautical discussed the plausibilities with the client and curated a design where it was easy to showcase and attract the potential clients.after that The website was successfully deployed and is helping the client make great profit.",
+    },
+    sliderImgs: {
+      img1: kawani_img2,
+      img2: kawani_img4,
+      img3: kawani_img3,
+    },
+    imagesData: {
+      leftImage: kawani_img5,
+      rightImage: kawani_img6,
+    },
+  },
+  {
+    id: "",
+    bannerData: {
+      imageUrl:kawani_img1,
+      title:" ",
+      sumTitle: " ",
+      technology: "Wordpress",
+      start: "06/08/2021",
+      launch: " ",
+      webLink: "  ",
+    },
+    aboutDetail: {
+      sNo: "01",
+      topic: "Project Brief ",
+      heading: "bdazzle ",
+      description: " ",
+    },
+    challengesDetail: {
+      sNo: "02",
+      topic: "Faced Challenges",
+      heading: "Challenge",
+      description:"The designs and creatives need to be displayed in a way where the user can compare easily.Easy backend so that the tech team with the client can easily update the upcoming events.Building a solution that users can easily relate to and interact with so many features included was a tough thing.",
+    },
+    
+    conclusionDetail: {
+      sNo: "03",
+      topic: "CONCLUSION",
+      heading: "",
+      description:"The team at Webnautical discussed the plausibilities with the client and curated a design where it was easy to showcase and attract the potential clients.after that The website was successfully deployed and is helping the client make great profit.",
+    },
+    sliderImgs: {
+      img1: kawani_img2,
+      img2: kawani_img4,
+      img3: kawani_img3,
+    },
+    imagesData: {
+      leftImage: kawani_img5,
+      rightImage: kawani_img6,
+    },
+  },
+  {
+    id: "",
+    bannerData: {
+      imageUrl:kawani_img1,
+      title:" ",
+      sumTitle: " ",
+      technology: "Wordpress",
+      start: "06/08/2021",
+      launch: " ",
+      webLink: "  ",
+    },
+    aboutDetail: {
+      sNo: "01",
+      topic: "Project Brief ",
+      heading: "bdazzle ",
+      description: " ",
+    },
+    challengesDetail: {
+      sNo: "02",
+      topic: "Faced Challenges",
+      heading: "Challenge",
+      description:"The designs and creatives need to be displayed in a way where the user can compare easily.Easy backend so that the tech team with the client can easily update the upcoming events.Building a solution that users can easily relate to and interact with so many features included was a tough thing.",
+    },
+    
+    conclusionDetail: {
+      sNo: "03",
+      topic: "CONCLUSION",
+      heading: "",
+      description:"The team at Webnautical discussed the plausibilities with the client and curated a design where it was easy to showcase and attract the potential clients.after that The website was successfully deployed and is helping the client make great profit.",
+    },
+    sliderImgs: {
+      img1: kawani_img2,
+      img2: kawani_img4,
+      img3: kawani_img3,
+    },
+    imagesData: {
+      leftImage: kawani_img5,
+      rightImage: kawani_img6,
+    },
+  },
+  {
+    id: "",
+    bannerData: {
+      imageUrl:kawani_img1,
+      title:" ",
+      sumTitle: " ",
+      technology: "Wordpress",
+      start: "06/08/2021",
+      launch: " ",
+      webLink: "  ",
+    },
+    aboutDetail: {
+      sNo: "01",
+      topic: "Project Brief ",
+      heading: "bdazzle ",
+      description: " ",
+    },
+    challengesDetail: {
+      sNo: "02",
+      topic: "Faced Challenges",
+      heading: "Challenge",
+      description:"The designs and creatives need to be displayed in a way where the user can compare easily.Easy backend so that the tech team with the client can easily update the upcoming events.Building a solution that users can easily relate to and interact with so many features included was a tough thing.",
+    },
+    
+    conclusionDetail: {
+      sNo: "03",
+      topic: "CONCLUSION",
+      heading: "",
+      description:"The team at Webnautical discussed the plausibilities with the client and curated a design where it was easy to showcase and attract the potential clients.after that The website was successfully deployed and is helping the client make great profit.",
+    },
+    sliderImgs: {
+      img1: kawani_img2,
+      img2: kawani_img4,
+      img3: kawani_img3,
+    },
+    imagesData: {
+      leftImage: kawani_img5,
+      rightImage: kawani_img6,
+    },
+  },
+  {
+    id: "",
+    bannerData: {
+      imageUrl:kawani_img1,
+      title:" ",
+      sumTitle: " ",
+      technology: "Wordpress",
+      start: "06/08/2021",
+      launch: " ",
+      webLink: "  ",
+    },
+    aboutDetail: {
+      sNo: "01",
+      topic: "Project Brief ",
+      heading: "bdazzle ",
+      description: " ",
+    },
+    challengesDetail: {
+      sNo: "02",
+      topic: "Faced Challenges",
+      heading: "Challenge",
+      description:"The designs and creatives need to be displayed in a way where the user can compare easily.Easy backend so that the tech team with the client can easily update the upcoming events.Building a solution that users can easily relate to and interact with so many features included was a tough thing.",
+    },
+    
+    conclusionDetail: {
+      sNo: "03",
+      topic: "CONCLUSION",
+      heading: "",
+      description:"The team at Webnautical discussed the plausibilities with the client and curated a design where it was easy to showcase and attract the potential clients.after that The website was successfully deployed and is helping the client make great profit.",
+    },
+    sliderImgs: {
+      img1: kawani_img2,
+      img2: kawani_img4,
+      img3: kawani_img3,
+    },
+    imagesData: {
+      leftImage: kawani_img5,
+      rightImage: kawani_img6,
+    },
+  },
+  {
+    id: "",
+    bannerData: {
+      imageUrl:kawani_img1,
+      title:" ",
+      sumTitle: " ",
+      technology: "Wordpress",
+      start: "06/08/2021",
+      launch: " ",
+      webLink: "  ",
+    },
+    aboutDetail: {
+      sNo: "01",
+      topic: "Project Brief ",
+      heading: "bdazzle ",
+      description: " ",
+    },
+    challengesDetail: {
+      sNo: "02",
+      topic: "Faced Challenges",
+      heading: "Challenge",
+      description:"The designs and creatives need to be displayed in a way where the user can compare easily.Easy backend so that the tech team with the client can easily update the upcoming events.Building a solution that users can easily relate to and interact with so many features included was a tough thing.",
+    },
+    
+    conclusionDetail: {
+      sNo: "03",
+      topic: "CONCLUSION",
+      heading: "",
+      description:"The team at Webnautical discussed the plausibilities with the client and curated a design where it was easy to showcase and attract the potential clients.after that The website was successfully deployed and is helping the client make great profit.",
+    },
+    sliderImgs: {
+      img1: kawani_img2,
+      img2: kawani_img4,
+      img3: kawani_img3,
+    },
+    imagesData: {
+      leftImage: kawani_img5,
+      rightImage: kawani_img6,
+    },
+  },
+  {
+    id: "",
+    bannerData: {
+      imageUrl:kawani_img1,
+      title:" ",
+      sumTitle: " ",
+      technology: "Wordpress",
+      start: "06/08/2021",
+      launch: " ",
+      webLink: "  ",
+    },
+    aboutDetail: {
+      sNo: "01",
+      topic: "Project Brief ",
+      heading: "bdazzle ",
+      description: " ",
+    },
+    challengesDetail: {
+      sNo: "02",
+      topic: "Faced Challenges",
+      heading: "Challenge",
+      description:"The designs and creatives need to be displayed in a way where the user can compare easily.Easy backend so that the tech team with the client can easily update the upcoming events.Building a solution that users can easily relate to and interact with so many features included was a tough thing.",
+    },
+    
+    conclusionDetail: {
+      sNo: "03",
+      topic: "CONCLUSION",
+      heading: "",
+      description:"The team at Webnautical discussed the plausibilities with the client and curated a design where it was easy to showcase and attract the potential clients.after that The website was successfully deployed and is helping the client make great profit.",
+    },
+    sliderImgs: {
+      img1: kawani_img2,
+      img2: kawani_img4,
+      img3: kawani_img3,
+    },
+    imagesData: {
+      leftImage: kawani_img5,
+      rightImage: kawani_img6,
+    },
+  },
+  {
+    id: "jewellery-bdazzle",
+    bannerData: {
+      imageUrl:bdazzle_img4,
+      title:" Jewellery",
+      sumTitle: "bdazzle",
+      technology: "Wordpress",
+      start: "06/08/2021",
+      launch: "",
+      webLink: "https://www.bdazzle.sg/",
+    },
+    aboutDetail: {
+      sNo: "01",
+      topic: "Project Brief ",
+      heading: "bdazzle ",
+      description: "B*dazzle was formerly known as Isabella. Isabella started ear-piercing since 1979. B*dazzle is the leading ear piercing specialists and has been providing quality fashion jewelry in Singapore for over 30 years. ",
+    },
+    challengesDetail: {
+      sNo: "02",
+      topic: "Faced Challenges",
+      heading: "Challenge",
+      description:"The designs and creatives need to be displayed in a way where the user can compare easily.Easy backend so that the tech team with the client can easily update the upcoming events.Building a solution that users can easily relate to and interact with so many features included was a tough thing.",
+    },
+    
+    conclusionDetail: {
+      sNo: "03",
+      topic: "CONCLUSION",
+      heading: "",
+      description:"The team at Webnautical discussed the plausibilities with the client and curated a design where it was easy to showcase and attract the potential clients.after that The website was successfully deployed and is helping the client make great profit.",
+    },
+    sliderImgs: {
+      img1: bdazzle_img1,
+      img2: bdazzle_img2,
+      img3: bdazzle_img3,
+    },
+    imagesData: {
+      leftImage: bdazzle_img4,
+      rightImage: bdazzle_img5,
+    },
+  },
+  {
+    id: "kwaninifashion",
+    bannerData: {
+      imageUrl:kawani_img1,
+      title:"Clothing Accessories",
+      sumTitle: " ",
+      technology: "Wordpress",
+      start: "06/08/2021",
+      launch: " ",
+      webLink: " https://kwaninifashion.com/ ",
+    },
+    aboutDetail: {
+      sNo: "01",
+      topic: "Project Brief ",
+      heading: "kwaninifashion ",
+      description: " online Store for men and women",
+    },
+    challengesDetail: {
+      sNo: "02",
+      topic: "Faced Challenges",
+      heading: "Challenge",
+      description:"The designs and creatives need to be displayed in a way where the user can compare easily.Easy backend so that the tech team with the client can easily update the upcoming events.Building a solution that users can easily relate to and interact with so many features included was a tough thing.",
+    },
+    
+    conclusionDetail: {
+      sNo: "03",
+      topic: "CONCLUSION",
+      heading: "",
+      description:"The team at Webnautical discussed the plausibilities with the client and curated a design where it was easy to showcase and attract the potential clients.after that The website was successfully deployed and is helping the client make great profit.",
+    },
+    sliderImgs: {
+      img1: kawani_img2,
+      img2: kawani_img4,
+      img3: kawani_img3,
+    },
+    imagesData: {
+      leftImage: kawani_img5,
+      rightImage: kawani_img6,
+    },
+  },
+  {
+    id: "ronafishingcharters",
+    bannerData: {
+      imageUrl:rona_img1,
+      title:"Tour & Travels",
+      sumTitle: "Ronafishingcharters ",
+      technology: "Wordpress",
+      start: "06/08/2021",
+      launch: " ",
+      webLink: " https://ronafishingcharters.com.au/ ",
+    },
+    aboutDetail: {
+      sNo: "01",
+      topic: "Project Brief ",
+      heading: "ronafishingcharters",
+      description: "We give all ages the very best experience onboard and quite often customers get to see the whales for free. Our vessel is 10.5 meters (38 feet) long single hull and has 2 brand new 150 hp outboard motors.",
+    },
+    challengesDetail: {
+      sNo: "02",
+      topic: "Faced Challenges",
+      heading: "Challenge",
+      description:"The designs and creatives need to be displayed in a way where the user can compare easily.Easy backend so that the tech team with the client can easily update the upcoming events.Building a solution that users can easily relate to and interact with so many features included was a tough thing.",
+    },
+    
+    conclusionDetail: {
+      sNo: "03",
+      topic: "CONCLUSION",
+      heading: "",
+      description:"The team at Webnautical discussed the plausibilities with the client and curated a design where it was easy to showcase and attract the potential clients.after that The website was successfully deployed and is helping the client make great profit.",
+    },
+    sliderImgs: {
+      img1: rona_img2,
+      img2: rona_img1,
+      img3: rona_img3,
+    },
+    imagesData: {
+      leftImage: rona_img5,
+      rightImage: rona_img6,
+    },
+  },
+  {
+    id: "southamericatours",
+    bannerData: {
+      imageUrl: south_img1,
+      title:" Tour & Travels",
+      sumTitle: "southamericatours      ",
+      technology: "Wordpress",
+      start: "06/08/2021",
+      launch: " ",
+      webLink: " https://www.southamericatours.com.au/ ",
+    },
+    aboutDetail: {
+      sNo: "01",
+      topic: "Project Brief ",
+      heading: "www.southamericatours ",
+      description: "South America Tours Pty Ltd is specialise in creating itineraries tailored to individual requirements, just let us know where you’d like to go, what you’d like to see, what standard of accommodation you prefer and the type of cruise you’d like to embark, our team will design your perfect South American holiday. ",
+    },
+    challengesDetail: {
+      sNo: "02",
+      topic: "Faced Challenges",
+      heading: "Challenge",
+      description:"The designs and creatives need to be displayed in a way where the user can compare easily.Easy backend so that the tech team with the client can easily update the upcoming events.Building a solution that users can easily relate to and interact with so many features included was a tough thing.",
+    },
+    
+    conclusionDetail: {
+      sNo: "03",
+      topic: "CONCLUSION",
+      heading: "",
+      description:"The team at Webnautical discussed the plausibilities with the client and curated a design where it was easy to showcase and attract the potential clients.after that The website was successfully deployed and is helping the client make great profit.",
+    },
+    sliderImgs: {
+      img1:  south_img2,
+      img2:  south_img4,
+      img3:  south_img3,
+    },
+    imagesData: {
+      leftImage:  south_img5,
+      rightImage:  south_img6,
+    },
+  },
+  {
+    id: "boda",
+    bannerData: {
+      imageUrl:boda_img1,
+      title:"Beauty Products",
+      sumTitle: "BODA ",
+      technology: "Wordpress",
+      start: "06/08/2021",
+      launch: " ",
+      webLink: " www.bodahairboutique.com.au ",
+    },
+    aboutDetail: {
+      sNo: "01",
+      topic: "Project Brief ",
+      heading: "bodahairboutique",
+      description: "BODA is not your average hair business. Operating since 2016, Owner Martha Kourtidou was driven by a need to make women everywhere feel empowered and beautiful, starting with a woman’s crown – her hair. ",
+    },
+    challengesDetail: {
+      sNo: "02",
+      topic: "Faced Challenges",
+      heading: "Challenge",
+      description:"The designs and creatives need to be displayed in a way where the user can compare easily.Easy backend so that the tech team with the client can easily update the upcoming events.Building a solution that users can easily relate to and interact with so many features included was a tough thing.",
+    },
+    
+    conclusionDetail: {
+      sNo: "03",
+      topic: "CONCLUSION",
+      heading: "",
+      description:"The team at Webnautical discussed the plausibilities with the client and curated a design where it was easy to showcase and attract the potential clients.after that The website was successfully deployed and is helping the client make great profit.",
+    },
+    sliderImgs: {
+      img1: boda_img2,
+      img2: boda_img4,
+      img3: boda_img3,
+    },
+    imagesData: {
+      leftImage: boda_img5,
+      rightImage: boda_img6,
+    },
+  },
+  {
+    id: "iaamu",
+    bannerData: {
+      imageUrl:iaamu_img1,
+      title:" Cosmetics and Tools ",
+      sumTitle: " iaamu",
+      technology: "Wordpress",
+      start: "06/08/2021",
+      launch: " ",
+      webLink: "https://iaamu.com.au/about/  ",
+    },
+    aboutDetail: {
+      sNo: "01",
+      topic: "Project Brief ",
+      heading: "iaamu ",
+      description: " Iaamu an exclusive Make-up Studio located in Moonee Ponds, Melbourne. IAAMU offers a vast range of high-end Make-up Artist quality cosmetics and tools. Make- Up Application for any Special Occasion,  Workshops, Lessons and Make-Up Courses.",
+    },
+    challengesDetail: {
+      sNo: "02",
+      topic: "Faced Challenges",
+      heading: "Challenge",
+      description:"The designs and creatives need to be displayed in a way where the user can compare easily.Easy backend so that the tech team with the client can easily update the upcoming events.Building a solution that users can easily relate to and interact with so many features included was a tough thing.",
+    },
+    
+    conclusionDetail: {
+      sNo: "03",
+      topic: "CONCLUSION",
+      heading: "",
+      description:"The team at Webnautical discussed the plausibilities with the client and curated a design where it was easy to showcase and attract the potential clients.after that The website was successfully deployed and is helping the client make great profit.",
+    },
+    sliderImgs: {
+      img1: iaamu_img2,
+      img2: iaamu_img4,
+      img3: iaamu_img3,
+    },
+    imagesData: {
+      leftImage: iaamu_img5,
+      rightImage: iaamu_img6,
+    },
+  },
+  {
+    id: "glasswareimports",
+    bannerData: {
+      imageUrl:glass_img1,
+      title:"Home Decor ",
+      sumTitle: " Glasswareimports",
+      technology: "Wordpress",
+      start: "",
+      launch: " ",
+      webLink: " https://glasswareimports.com.au/ ",
+    },
+    aboutDetail: {
+      sNo: "01",
+      topic: "Project Brief ",
+      heading: "Glasswareimports ",
+      description: "Glassware Imports offer a wide variety of inspired design jars & canisters for use as home decor giftware or the ever so popular candle making industry.  They have a large and well appointed showroom where you can come and spend your time being creative, designing your own unique and inspired collection.",
+    },
+    challengesDetail: {
+      sNo: "02",
+      topic: "Faced Challenges",
+      heading: "Challenge",
+      description:"The designs and creatives need to be displayed in a way where the user can compare easily.Easy backend so that the tech team with the client can easily update the upcoming events.Building a solution that users can easily relate to and interact with so many features included was a tough thing.",
+    },
+    
+    conclusionDetail: {
+      sNo: "03",
+      topic: "CONCLUSION",
+      heading: "",
+      description:"The team at Webnautical discussed the plausibilities with the client and curated a design where it was easy to showcase and attract the potential clients.after that The website was successfully deployed and is helping the client make great profit.",
+    },
+    sliderImgs: {
+      img1: glass_img2,
+      img2: glass_img4,
+      img3: glass_img3,
+    },
+    imagesData: {
+      leftImage: glass_img5,
+      rightImage: glass_img6,
+    },
+  },
+  {
+    id:"mokshayoga",
+    bannerData: {
+      imageUrl:mok_img1,
+      title:"Yoga",
+      sumTitle: "Mokshayoga ",
+      technology: "Wordpress",
+      start: "06/08/2021",
+      launch: " ",
+      webLink: "https://www.mokshayoga.com.au/ ",
+    },
+    aboutDetail: {
+      sNo: "01",
+      topic: "mokshayoga",
+      heading: " mokshayoga",
+      description: "Moksha invites you to explore the true essence of yoga and experience the deep-reaching transformational benefits of this practice at every level of your being – enlivening the body, centring the mind, opening the heart and awakening the spirit. ",
+    },
+    challengesDetail: {
+      sNo: "02",
+      topic: "Faced Challenges",
+      heading: "Challenge",
+      description:"The designs and creatives need to be displayed in a way where the user can compare easily.Easy backend so that the tech team with the client can easily update the upcoming events.Building a solution that users can easily relate to and interact with so many features included was a tough thing.",
+    },
+    
+    conclusionDetail: {
+      sNo: "03",
+      topic: "CONCLUSION",
+      heading: "",
+      description:"The team at Webnautical discussed the plausibilities with the client and curated a design where it was easy to showcase and attract the potential clients.after that The website was successfully deployed and is helping the client make great profit.",
+    },
+    sliderImgs: {
+      img1: mok_img2,
+      img2: mok_img4,
+      img3: mok_img3,
+    },
+    imagesData: {
+      leftImage: mok_img5,
+      rightImage: mok_img6,
+    },
+  },
+  {
+    id:"aikawellness",
+    bannerData: {
+      imageUrl:aika_img1,
+      title:"Beauty Products ",
+      sumTitle: "aikawellness ",
+      technology: "Wordpress",
+      start: "06/08/2021",
+      launch: " ",
+      webLink: " https://aikawellness.com ",
+    },
+    aboutDetail: {
+      sNo: "01",
+      topic: "Project Brief ",
+      heading: "bdazzle ",
+      description: " Aika is an Ayurvedic spa and wellness range which goes beyond beauty. I want to create a synergy between sensuous skin and body care, restorative Ayurvedic principles, aromatherapy and energetic healing for people who seek true and complete wellness in their life. It’s 100% certified organic Ayurvedic-inspired skincare for the luxe purist.",
+    },
+    challengesDetail: {
+      sNo: "02",
+      topic: "Faced Challenges",
+      heading: "Challenge",
+      description:"The designs and creatives need to be displayed in a way where the user can compare easily.Easy backend so that the tech team with the client can easily update the upcoming events.Building a solution that users can easily relate to and interact with so many features included was a tough thing.",
+    },
+    
+    conclusionDetail: {
+      sNo: "03",
+      topic: "CONCLUSION",
+      heading: "",
+      description:"The team at Webnautical discussed the plausibilities with the client and curated a design where it was easy to showcase and attract the potential clients.after that The website was successfully deployed and is helping the client make great profit.",
+    },
+    sliderImgs: {
+      img1: aika_img2,
+      img2: aika_img4,
+      img3: aika_img3,
+    },
+    imagesData: {
+      leftImage: aika_img5,
+      rightImage: aika_img6,
+    },
+  },
+  {
+    id: "giant-slayer",
+    bannerData: {
+      imageUrl:giant_img1,
+      title:" Video Streaming App & Web",
+      sumTitle: "Giant Slayer ",
+      technology: "Wordpress",
+      start: "07/02/2023",
+      launch: "18/04/2023 ",
+      webLink: "Giantslayer.com  ",
+    },
+    aboutDetail: {
+      sNo: "01",
+      topic: "Project Brief ",
+      heading: "bdazzle ",
+      description: " ",
+    },
+    challengesDetail: {
+      sNo: "02",
+      topic: "Faced Challenges",
+      heading: "Challenge",
+      description:"The designs and creatives need to be displayed in a way where the user can compare easily.Easy backend so that the tech team with the client can easily update the upcoming events.Building a solution that users can easily relate to and interact with so many features included was a tough thing.",
+    },
+    
+    conclusionDetail: {
+      sNo: "03",
+      topic: "CONCLUSION",
+      heading: "",
+      description:"The team at Webnautical discussed the plausibilities with the client and curated a design where it was easy to showcase and attract the potential clients.after that The website was successfully deployed and is helping the client make great profit.",
+    },
+    sliderImgs: {
+      img1: giant_img2,
+      img2: giant_img2,
+      img3: giant_img2,
+    },
+    imagesData: {
+      leftImage: giant_img5,
+      rightImage: giant_img5,
+    },
+  },
+  {
+    id: "Moving-House",
+    bannerData: {
+      title: "Moving House office",
+      sumTitle: "Interstateremovalists",
+      technology: "Wordpress",
+      start: "06/08/2021",
+      launch: "",
+      webLink: "https://soteria-il.com.au/",
+    },
+    aboutDetail: {
+      sNo: "01",
+      topic: "About",
+      heading: "Interstateremovalists",
+      description:
+        "Interstate Removalists understand the complexities and stresses of moving interstate and make every effort to ease the process. We set a timeliness for your removal and organise each step in a chronological way so there are no surprises. Even the smallest details are taken care of to lift the stress of moving and give you confidence in the removal process.",
+    },
+    challengesDetail: {
+      sNo: "02",
+      topic: "Faced Challenges",
+      heading: "Challenge",
+      description:
+        "The designs and creatives need to be displayed in a way where the user can compare easily.Easy backend so that the tech team with the client can easily update the upcoming events.Building a solution that users can easily relate to and interact with so many features included was a tough thing.",
+    },
+    conclusionDetail: {
+      sNo: "03",
+      topic: "CONCLUSION",
+      heading: "",
+      description:
+        "The team at Webnautical discussed the plausibilities with the client and curated a design where it was easy to showcase and attract the potential clients.after that The website was successfully deployed and is helping the client make great profit.",
+    },
+    sliderImgs: {
+      img1: home_img1,
+      img2: home_img2,
+      img3: home_img3,
+    },
+    imagesData: {
+      leftImage: HomeLeftImg,
+      rightImage: HomeRightImg,
+    },
+  },
+
+  
+];
+
+function ProjectDeatils({data}) {
+  const {
+    bannerData,
+    aboutDetail,
+    challengesDetail,
+    conclusionDetail,
+    sliderImgs,
+    imagesData,
+  } = data;
+  return (
+    <>
+      <PortfolioBanner bannerData={bannerData} />
+      <PortfolioTextSec textData={aboutDetail} />
+      <PortfolioOwlCrousel crouselData={sliderImgs} />
+      <PortfolioTextSec textData={challengesDetail} />
+      <PortfolioImageSec ImgData={imagesData} />
+      <PortfolioTextSec textData={conclusionDetail} />
+    </>
+  );
+}
+
+export default ProjectDeatils;

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /src/  # Block crawling of source code or assets if needed
+Allow: /assets/ # Allow access to assets folder
+Sitemap: https://webnautical.com/sitemap.xml
